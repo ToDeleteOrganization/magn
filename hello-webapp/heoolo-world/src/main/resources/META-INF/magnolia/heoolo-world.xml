@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+
+<module>
+	<name>heoolo-world</name>
+	<displayName>${project.name}</displayName>
+	<description>${project.description}</description>
+	<class>com.test.hello.world.HellloWorldModuleClass</class>
+	<versionHandler>com.test.hello.world.setup.HellloWorldModuleClassVersionHandler</versionHandler>
+	<version>${project.version}</version>
+
+	<dependencies>
+		<dependency>
+			<name>core</name>
+			<version>5.3/*</version>
+		</dependency>
+
+
+		<!-- Add other dependencies here, e.g the standard-templating-kit, or the multisite module with the enterprise edition. -->
+		<!-- <dependency> <name>standard-templating-kit</name> <version>2.7/*</version> </dependency> <dependency> <name>multisite</name> <version>1.0/*</version> </dependency> -->
+
+		<!-- <dependencies> -->
+		<!-- <dependency> -->
+		<!-- <name>core</name> -->
+		<!-- <version>5.3.9/*</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <name>rendering</name> -->
+		<!-- <version>5.3.9/*</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <name>templating</name> -->
+		<!-- <version>5.3.9/*</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <name>templating-jsp</name> -->
+		<!-- <version>5.3.9/*</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <name>blossom</name> -->
+		<!-- <version>3.0.7/*</version> -->
+		<!-- </dependency> -->
+		<!-- </dependencies> -->
+
+	</dependencies>
+</module>
