@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -13,14 +14,6 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>heoolo-world Magnolia Module</name>
-
-	<properties>
-		<magnoliaVersion>5.3</magnoliaVersion>
-		<javaVersion>1.6</javaVersion>
-		<blossomVersion>3.0.7</blossomVersion>
-		<springVersion>4.1.7.RELEASE</springVersion>
-	</properties>
-
 
 	<!-- Dependencies -->
 	<dependencies>
@@ -55,6 +48,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
@@ -67,13 +61,32 @@
 			</exclusions>
 		</dependency>
 
-		<!-- TEST -->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
-			<scope>test</scope>
+			<groupId>info.magnolia.dam</groupId>
+			<artifactId>magnolia-dam-api</artifactId>
+			<version>${damVersion}</version>
 		</dependency>
+		<dependency>
+			<groupId>info.magnolia.dam</groupId>
+			<artifactId>magnolia-dam-app</artifactId>
+			<version>${damVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia.dam</groupId>
+			<artifactId>magnolia-dam-core</artifactId>
+			<version>${damVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia.dam</groupId>
+			<artifactId>magnolia-dam-jcr</artifactId>
+			<version>${damVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>info.magnolia.dam</groupId>
+			<artifactId>magnolia-dam-templating</artifactId>
+			<version>${damVersion}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -105,7 +118,6 @@
 				</includes>
 			</resource>
 		</resources>
-		<finalName>demoModule</finalName>
 	</build>
 
 	<repositories>
@@ -115,9 +127,10 @@
 			<snapshots>
 			</snapshots>
 		</repository>
-		<!-- IF YOU NEED MODULES FROM THE ENTERPRISE VERSION, UNCOMMENT THE FOLLOWING REPOSITORY -->
-		<!-- <repository> <id>magnolia.enterprise.releases</id> <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.enterprise.releases</url> <snapshots> <enabled>false</enabled> 
-			</snapshots> </repository> -->
+		<!-- IF YOU NEED MODULES FROM THE ENTERPRISE VERSION, UNCOMMENT THE FOLLOWING 
+			REPOSITORY -->
+		<!-- <repository> <id>magnolia.enterprise.releases</id> <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.enterprise.releases</url> 
+			<snapshots> <enabled>false</enabled> </snapshots> </repository> -->
 		<repository>
 			<id>vaadin-addons</id>
 			<url>https://maven.vaadin.com/vaadin-addons</url>

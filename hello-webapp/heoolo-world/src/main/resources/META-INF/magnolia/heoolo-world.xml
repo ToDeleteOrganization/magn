@@ -3,7 +3,7 @@
 
 <module>
 	<name>heoolo-world</name>
-	<displayName>${project.name}</displayName>
+	<displayName>DDDDDDemo project</displayName>
 	<description>${project.description}</description>
 	<class>com.test.hello.world.HellloWorldModuleClass</class>
 	<versionHandler>com.test.hello.world.setup.HellloWorldModuleClassVersionHandler</versionHandler>
@@ -12,35 +12,24 @@
 	<dependencies>
 		<dependency>
 			<name>core</name>
-			<version>5.3/*</version>
+			<version>${magnoliaVersion}/*</version>
 		</dependency>
-
-
-		<!-- Add other dependencies here, e.g the standard-templating-kit, or the multisite module with the enterprise edition. -->
-		<!-- <dependency> <name>standard-templating-kit</name> <version>2.7/*</version> </dependency> <dependency> <name>multisite</name> <version>1.0/*</version> </dependency> -->
-
-		<!-- <dependencies> -->
-		<!-- <dependency> -->
-		<!-- <name>core</name> -->
-		<!-- <version>5.3.9/*</version> -->
-		<!-- </dependency> -->
-		<!-- <dependency> -->
-		<!-- <name>rendering</name> -->
-		<!-- <version>5.3.9/*</version> -->
-		<!-- </dependency> -->
-		<!-- <dependency> -->
-		<!-- <name>templating</name> -->
-		<!-- <version>5.3.9/*</version> -->
-		<!-- </dependency> -->
-		<!-- <dependency> -->
-		<!-- <name>templating-jsp</name> -->
-		<!-- <version>5.3.9/*</version> -->
-		<!-- </dependency> -->
-		<!-- <dependency> -->
-		<!-- <name>blossom</name> -->
-		<!-- <version>3.0.7/*</version> -->
-		<!-- </dependency> -->
-		<!-- </dependencies> -->
-
+		<dependency>
+			<name>rendering</name>
+			<version>${magnoliaVersion}/*</version>
+		</dependency>
+		<dependency>
+			<name>templating</name>
+			<version>${magnoliaVersion}/*</version>
+		</dependency>
+		<dependency>
+			<name>templating-jsp</name>
+			<version>${magnoliaVersion}/*</version>
+		</dependency>
+		<dependency>
+			<name>blossom</name>
+			<version>${blossomVersion}/*</version>
+		</dependency>
 	</dependencies>
+
 </module>

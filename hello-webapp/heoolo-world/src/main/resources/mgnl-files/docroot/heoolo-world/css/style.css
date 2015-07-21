@@ -1,0 +1,115 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	background-color: antiquewhite;
+	color: #B4CDE9;
+	height: 100%;
+	width: 65%;
+	padding: 10px;
+    margin: auto;
+}
+
+a,a:link {
+	color: #B4CDE9;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #F0F0F0;
+}
+
+li a {
+	display: block;
+	line-height: 30px;
+}
+
+div.shell {
+	width: 100%;
+	height: 100%;
+	background-image: url("images/hyro-bg.png");
+	background-repeat: no-repeat;
+}
+
+div.header {
+	width: 100%;
+	height: 100px;
+}
+
+div.headerLeft {
+	height: 100px;
+	left: 10px;
+	position: absolute;
+	width: 120px;
+}
+
+div.headerCenter {
+	padding: 25px;
+	left: 140px;
+	position: absolute;
+}
+
+div.footer {
+	border-top: 1px solid #B1AAA4;
+	color: #9CCAFF;
+	margin: 20px;
+	padding: 10px;
+	text-align: center;
+	height: 100px;
+	margin: 20px;
+}
+
+span.header {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+div.simple {
+	min-height: 120px;
+	border-top: 1px solid #B1AAA4;
+	padding: 10px;
+	margin: 20px;
+}
+
+div.nested {
+	min-height: 120px;
+	border-top: 1px solid #B1AAA4;
+	padding: 10px;
+	margin: 20px;
+}
+
+ul.nested {
+	float: left;
+	margin-right: 20px;
+	width: 20%;
+	list-style-image: url("images/iconArrowLightBlue.png");
+	border-top: 1px dotted #4E91DD;
+}
+
+ul.nested li {
+	border-bottom: 1px dotted #4E91DD;
+}
+
+div.header {
+	height: 7%;
+	font-size: medium;
+	font-style: italic;
+	text-align: center;
+	background-color: #457777;
+}
+
+div.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin-right: 20%;
+	font-style: italic;
+}
+
+div.content {
+	width: 65%;
+	padding: 10px;
+    margin: auto;
+}

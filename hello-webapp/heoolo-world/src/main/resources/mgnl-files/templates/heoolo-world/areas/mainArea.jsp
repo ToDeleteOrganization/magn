@@ -1,9 +1,6 @@
-<%@ include file="/WEB-INF/templates/magnoliaDemoModule/includes/taglibs.jsp"%>
+<%@ include file="/templates/heoolo-world/includes/taglibs.jsp"%>
  
- 
- Main ui area!!!
- 
-<div id="mainUI">
+<div id="mainUI" class="main-content">
 	<c:forEach items="${components}" var="component">
 		<div style="border: solid;margin-top: 100px;">
 			<cms:component content="${component}" />

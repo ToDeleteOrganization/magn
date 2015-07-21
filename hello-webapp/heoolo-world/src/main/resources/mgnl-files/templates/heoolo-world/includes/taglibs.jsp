@@ -3,3 +3,5 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib prefix="cms" uri="http://magnolia-cms.com/taglib/templating-components/cms" %>
 <%@ taglib uri="blossom-taglib" prefix="blossom" %>
+<%@ taglib uri="http://magnolia-cms.com/taglib/templating-components/cmsfn" prefix="cmsfn" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>

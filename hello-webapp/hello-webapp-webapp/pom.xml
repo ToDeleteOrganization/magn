@@ -44,5 +44,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>hyapp</finalName>
 	</build>
 </project>

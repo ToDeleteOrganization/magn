@@ -1,2 +1,7 @@
+<%@ include file="/templates/heoolo-world/includes/taglibs.jsp"%>
 
-<h4>This is the HEADER</h4>
+<div class="header">
+	<c:forEach items="${components}" var="component">
+		<cms:component content="${component}" />
+	</c:forEach>
+</div>
